@@ -27,4 +27,13 @@ pub fn run() {
     let a : i64 = 1288690;
     let b : i64 = 138;
     println!("a({}) < b({}) => {}", a, b, a < b);
+
+    // strings
+    // primitive str = Immutable fixed-length somewhere in memory
+    // String = growable, heap allocated data structure - use when you need to modify or own string data
+
+    let hello1 = "Hello"; // -> primitive str
+    let hello2 = String::from("Hello"); // -> String
+
+    println!("h1 {} and h2 {}", hello1, hello2);
 }

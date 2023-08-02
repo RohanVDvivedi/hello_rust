@@ -6,14 +6,20 @@ struct Person1
     age: u8,
 }
 
+impl Person1 {
+    fn new(name : &str, age : u8) -> Person1 {
+        return Person1 {
+            name: String::from(name),
+            age: age,
+        };
+    }
+}
+
 // Tuple struct
 struct Person2(String, u8);
 
 pub fn run() {
-    let mut p1 = Person1 {
-        name: String::from("Rohan"),
-        age: 26,
-    };
+    let mut p1 = Person1::new("Rohan", 26);
     println!("p1 = person named {} aged {}", p1.name, p1.age);
     p1.age += 1;
     println!("p1 = person named {} aged {}", p1.name, p1.age);

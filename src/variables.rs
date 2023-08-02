@@ -23,4 +23,8 @@ pub fn run() {
     // explicit typing with range
     let asu_id : i64 = 1224063958;
     println!("And my ASU id is {}, which is in range [{}, {}]", asu_id, std::i64::MIN, std::i64::MIN);
+
+    let a : i64 = 1288690;
+    let b : i64 = 138;
+    println!("a({}) < b({}) => {}", a, b, a < b);
 }

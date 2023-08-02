@@ -18,8 +18,12 @@ pub fn run() {
         count += 1;
     }
 
+    count = 90;
+
     // for loop
     for count in 0..limit {
         println!("for : {}", count);
     }
+
+    println!("count = {}, count inside loop is different variable", count);
 }

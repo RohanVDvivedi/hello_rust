@@ -6,9 +6,10 @@ pub fn run() {
     let name = "Rohan";
     let mut age = 26; // default to i32
     let weight = 73.5; // default to f64
-    println!("My name is {}, aged {}, weighs {}", name, age, weight);
+    let trades = true; // default to bool
+    println!("My name is {}, aged {}, weighs {} and trades {}", name, age, weight, trades);
     age += 1;
-    println!("My name is {}, aged {}, weighs {}", name, age, weight);
+    println!("My name is {}, aged {}", name, age);
 
 
     // primitive types of rust are 

@@ -12,4 +12,8 @@ pub fn run() {
     } else {
         println!("Enjoy you retired fellow !!");
     }
+
+    // shorthand
+    let a = 56;
+    println!("a ({}) > 60 = {}", a, (if a > 60 {"yes"} else {"no"}))
 }

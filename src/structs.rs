@@ -19,6 +19,9 @@ impl Person1 {
     fn age_by_an_year(&mut self) {
         self.age += 1;
     }
+    fn describe_with_move(self) -> String {
+        return format!("{} is aged {}.", self.name, self.age);
+    }
 }
 
 // Tuple struct
@@ -44,6 +47,7 @@ pub fn run() {
     println!("p1 = {}", p1.describe());
     p1.age_by_an_year();
     println!("p1 = {}", p1.describe());
+    println!("p1 (moved) = {}", p1.describe_with_move());
 
     let mut p2 = Person2::new("Brohan", 26);
     println!("p2 = {}", p2.describe());

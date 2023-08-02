@@ -18,4 +18,8 @@ pub fn run() {
     // tuples and arrays -> discussed later
 
     // rust is statically typed langauge i.e. all types known at compile time, but there is string strict type inference
+
+    // explicit typing with range
+    let asu_id : i64 = 1224063958;
+    println!("And my ASU id is {}, which is in range [{}, {}]", asu_id, std::i64::MIN, std::i64::MIN);
 }

@@ -1,19 +1,25 @@
 pub fn run() {
     let mut count = 0;
+    let limit = 20;
     
     // infinite loop
     loop {
-        if !(count < 20) {
+        if !(count < limit) {
             break;
         }
-        println!("{}", count);
+        println!("loop : {}", count);
         count += 1;
     }
 
     // same as above but with while
     count = 0;
-    while count < 20 {
-        println!("{}", count);
+    while count < limit {
+        println!("while : {}", count);
         count += 1;
+    }
+
+    // for loop
+    for count in 0..limit {
+        println!("for : {}", count);
     }
 }

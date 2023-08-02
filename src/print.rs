@@ -1,3 +1,3 @@
 pub fn run() {
-    println!("Hello {} !!", "Rohan");
+    println!("Hello {0} !!, {0}, likes to {1}", "Rohan", "code");
 }

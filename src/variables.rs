@@ -34,8 +34,8 @@ pub fn run() {
 
     let hello1 = "Hello"; // -> primitive str
     let mut hello2 = String::from(hello1); // -> String
-    hello2.push(' ');
-    hello2.push_str("World");
+    hello2.push(' '); // push a char
+    hello2.push_str("World"); // push a primitive str
 
     println!("h1 {} and h2 {}", hello1, hello2);
 }

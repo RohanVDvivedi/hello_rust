@@ -33,7 +33,9 @@ pub fn run() {
     // String = growable, heap allocated data structure - use when you need to modify or own string data
 
     let hello1 = "Hello"; // -> primitive str
-    let hello2 = String::from("Hello"); // -> String
+    let mut hello2 = String::from(hello1); // -> String
+    hello2.push(' ');
+    hello2.push_str("World");
 
     println!("h1 {} and h2 {}", hello1, hello2);
 }

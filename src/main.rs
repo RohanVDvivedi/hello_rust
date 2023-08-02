@@ -1,5 +1,5 @@
-mod pointer_references;
+mod structs;
 
 fn main() {
-    pointer_references::run();
+    structs::run();
 }

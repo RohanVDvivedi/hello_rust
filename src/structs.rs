@@ -13,6 +13,9 @@ impl Person1 {
             age: age,
         };
     }
+    fn describe(&self) -> String {
+        return format!("{} is aged {}.", self.name, self.age);
+    }
 }
 
 // Tuple struct
@@ -25,16 +28,19 @@ impl Person2 {
             age,
         );
     }
+    fn describe(&self) -> String {
+        return format!("{} is aged {}.", self.0, self.1);
+    }
 }
 
 pub fn run() {
     let mut p1 = Person1::new("Rohan", 26);
-    println!("p1 = person named {} aged {}", p1.name, p1.age);
+    println!("p1 = {}", p1.describe());
     p1.age += 1;
-    println!("p1 = person named {} aged {}", p1.name, p1.age);
+    println!("p1 = {}", p1.describe());
 
     let mut p2 = Person2::new("Brohan", 26);
-    println!("p2 = person named {} aged {}", p2.0, p2.1);
+    println!("p2 = {}", p2.describe());
     p2.1 += 1;
-    println!("p2 = person named {} aged {}", p2.0, p2.1);
+    println!("p2 = {}", p2.describe());
 }

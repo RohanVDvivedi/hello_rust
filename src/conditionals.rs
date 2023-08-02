@@ -1,7 +1,9 @@
 pub fn run() {
-    let age = 60;
+    let age = 16;
     let id = true;
-    if age < 20 {
+    if (age < 20) && id {
+        println!("Will be serving you drinks, but off the receipt");
+    } else if (age < 20) && !id {
         println!("No drinks for you");
     } else if age < 40 {
         println!("You must be at work");

@@ -38,4 +38,10 @@ pub fn run() {
     hello2.push_str("World"); // push a primitive str
 
     println!("h1 {} and h2 {}, length {}, capacity {}", hello1, hello2, hello2.len(), hello2.capacity());
+
+    let substr = "o W";
+    let substr_replace = "O  W";
+    println!("h2 contains {} = {}", substr, hello2.contains(substr));
+    hello2 = hello2.replace(substr, substr_replace);
+    println!("new h2 {}", hello2);
 }

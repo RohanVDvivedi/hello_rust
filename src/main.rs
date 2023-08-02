@@ -1,5 +1,5 @@
-mod variables;
+mod tuples;
 
 fn main() {
-    variables::run();
+    tuples::run();
 }

@@ -44,4 +44,10 @@ pub fn run() {
     println!("h2 contains {} = {}", substr, hello2.contains(substr));
     hello2 = hello2.replace(substr, substr_replace);
     println!("new h2 {}", hello2);
+
+    hello2.push_str(" by Rohan");
+    println!("printing hello2 word by word");
+    for word in hello2.split_whitespace() {
+        println!("{}", word)
+    }
 }

@@ -37,5 +37,5 @@ pub fn run() {
     hello2.push(' '); // push a char
     hello2.push_str("World"); // push a primitive str
 
-    println!("h1 {} and h2 {}", hello1, hello2);
+    println!("h1 {} and h2 {}, length {}, capacity {}", hello1, hello2, hello2.len(), hello2.capacity());
 }

@@ -1,6 +1,6 @@
 pub fn run() {
     let mut count = 0;
-    let limit = 20;
+    let limit : i128 = 20;
     
     // infinite loop
     loop {
@@ -24,6 +24,8 @@ pub fn run() {
     for count in 0..limit {
         println!("for : {}", count);
     }
+
+    println!("size of count = {}", std::mem::size_of_val(&count));
 
     println!("count = {}, count inside loop is different variable", count);
 }

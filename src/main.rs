@@ -1,5 +1,5 @@
-mod arrays;
+mod conditionals;
 
 fn main() {
-    arrays::run();
+    conditionals::run();
 }

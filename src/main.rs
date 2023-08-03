@@ -1,5 +1,5 @@
-mod stdio_buff;
+mod random;
 
 fn main() {
-    stdio_buff::run();
+    random::run();
 }

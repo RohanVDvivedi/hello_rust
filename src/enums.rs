@@ -2,10 +2,10 @@ enum Movement {
     Up,
     Down,
     Left,
-    Right
+    Right,
 }
 
-fn move_av(m : Movement) {
+fn move_av(m: Movement) {
     match m {
         Movement::Up => println!("Up"),
         Movement::Down => println!("Down"),

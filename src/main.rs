@@ -1,5 +1,5 @@
-mod enums;
+mod stdio_buff;
 
 fn main() {
-    enums::run();
+    stdio_buff::run();
 }
